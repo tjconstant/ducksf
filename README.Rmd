@@ -51,5 +51,5 @@ dbSendQuery(conn, "insert into x values (1, st_point(1,1))")
 read_sf(dsn = conn, query = "select * from x")
 ```
 
-Note `duckdb`'s spatial extension currently does not supoort encoding the CRS into the geometry. This may come in the future, but in the meantime we may wish to explore ways of storing a metadata table in the duckdb database when writing `sf` objects. 
+Note `duckdb`'s spatial extension currently does not supoort encoding the CRS into the geometry. This may come in the future, but in the meantime we may wish to explore ways of storing a metadata table in the duckdb database when writing `sf` objects.
 
